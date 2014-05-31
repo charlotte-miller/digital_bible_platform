@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = "digital_bible_platform"
   spec.version       = DigitalBiblePlatform::VERSION
   spec.authors       = ["Chip Miller"]
-  spec.email         = ["charlespmiller@gmail.com"]
+  spec.email         = ["use github"]
   spec.summary       = %q{A Ruby client for http://www.digitalbibleplatform.com/}
   spec.description   = %q{A Ruby client for http://www.digitalbibleplatform.com/}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/chip-miller/digital_bible_platform"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
