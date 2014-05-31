@@ -1,6 +1,6 @@
 # DigitalBiblePlatform
 
-TODO: Write a gem description
+A ruby wrapper for the [Digital Bible Platform](http://www.digitalbibleplatform.com/docs/)
 
 ## Installation
 
@@ -18,7 +18,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+#### Get an [API Key](http://www.digitalbibleplatform.com/dev/signup/) 
+#### Initialize a Client  
+```ruby
+@client = DigitalBiblePlatform::Client.new(<your-api-key>)
+```
+
+#### Get a list of the books of the Bible  
+You will need the short\_code (dam\_id)  
+```ruby
+books = @client.books
+```
+
+#### Get the media link for a book of the bible
+```ruby
+books = @client.url\_for('2Tim', 4)
+```
 
 ## Contributing
 
