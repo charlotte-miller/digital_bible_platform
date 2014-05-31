@@ -19,7 +19,8 @@ Or install it yourself as:
 ## Usage
 
 #### Get an [API Key](http://www.digitalbibleplatform.com/dev/signup/) 
-#### Initialize a Client  
+#### Initialize a Client
+You can set optional defaults for language, version, and media. [See details here.](https://github.com/chip-miller/digital_bible_platform/blob/master/lib/digital_bible_platform.rb#L14-L24)
 ```ruby
 @client = DigitalBiblePlatform::Client.new(<your-api-key>)
 ```
