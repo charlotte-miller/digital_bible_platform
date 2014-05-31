@@ -32,7 +32,7 @@ books = @client.books
 
 #### Get the media link for a book of the bible
 ```ruby
-books = @client.url\_for('2Tim', 4)
+books = @client.url_for('2Tim', 4)
 ```
 
 ## Contributing
