@@ -32,7 +32,8 @@ module DigitalBiblePlatform
     class Codes
       class << self
         def language(name)
-          lang = ISO_639.find_by_english_name(name.to_s.capitalize)
+          lang   = ISO_639.find(name.to_s.downcase)
+          lang ||= ISO_639.find_by_english_name(name.to_s.capitalize)
           raise ArgumentError.new("#{name} Not recognized as a language") unless lang
           lang.alpha3_bibliographic.upcase
         end
